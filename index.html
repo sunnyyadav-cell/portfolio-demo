@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sunny Kumar | Frontend Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: #0f172a; color: #e5e7eb; line-height: 1.6; }
+    a { color: #38bdf8; text-decoration: none; }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: linear-gradient(135deg, #020617, #0f172a);
+    }
+
+    header h1 { font-size: 3rem; font-weight: 700; }
+    header h1 span { color: #38bdf8; }
+    header p { margin: 1rem 0; max-width: 650px; font-size: 1.1rem; }
+
+    .btn {
+      display: inline-block;
+      margin: 0.5rem;
+      padding: 0.7rem 1.4rem;
+      border-radius: 30px;
+      border: 1px solid #38bdf8;
+      transition: 0.3s ease;
+    }
+
+    .btn:hover { background: #38bdf8; color: #020617; }
+
+    section { padding: 4rem 10%; }
+    section h2 { font-size: 2.2rem; margin-bottom: 1.5rem; color: #38bdf8; }
+
+    .about p { max-width: 800px; }
+
+    .skills-grid, .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: #020617;
+      padding: 1.5rem;
+      border-radius: 15px;
+      border: 1px solid #1e293b;
+      transition: transform 0.3s;
+    }
+
+    .card:hover { transform: translateY(-5px); }
+
+    .education ul, .awards ul { list-style: none; }
+    .education li, .awards li { margin-bottom: 1rem; }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      border-top: 1px solid #1e293b;
+      background: #020617;
+    }
+
+    @media (max-width: 768px) {
+      header h1 { font-size: 2.2rem; }
+      section { padding: 3rem 6%; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <div>
+      <h1>Hi, I'm <span>Sunny Kumar</span></h1>
+      <h3>Frontend Developer</h3>
+      <p>
+        Job‑ready Frontend Developer skilled in HTML, CSS, JavaScript, and React, focused on building scalable, responsive, and performance‑optimized web applications. Experienced in translating UI/UX designs into clean, maintainable code using modern frontend practices. Actively seeking frontend developer roles where I can contribute to production‑level projects and grow within a professional engineering team.
+      </p>
+      <a href="mailto:sunnyjee9234640116@gmail.com" class="btn">Contact Me</a>
+      <a href="https://www.linkedin.com/in/sunny-kumar-672b812a7" class="btn" target="_blank">LinkedIn</a>
+    </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>
+      I am a B.Tech Computer Science Engineering student and aspiring Frontend Developer with hands‑on experience
+      in building responsive and interactive web applications using HTML, CSS, JavaScript, and React.
+      I have a strong understanding of component‑based architecture, reusable UI components, and clean code practices.
+    </p>
+    <p>
+      I am actively looking for entry‑level Frontend Developer or Software Engineer roles where I can apply my
+      skills in real‑world projects, collaborate with experienced developers, and continuously improve product
+      quality and user experience.
+    </p>
+  </section>
+
+  <!-- SKILLS -->
+  <section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+      <div class="card"><strong>Frontend</strong><br>HTML5, CSS3, JavaScript (ES6+), React.js</div>
+      <div class="card"><strong>UI & Styling</strong><br>Bootstrap, Tailwind CSS, Responsive Design</div>
+      <div class="card"><strong>Programming</strong><br>Core Java, C, SQL</div>
+      <div class="card"><strong>Tools & Workflow</strong><br>VS Code, Eclipse, Git, GitHub</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="card">
+        <h3>Online Quiz Management System</h3>
+        <p><em>HTML, CSS, JavaScript</em></p>
+        <ul>
+          <li>Developed a complete frontend quiz platform with modular and reusable UI components.</li>
+          <li>Implemented dynamic question rendering, real‑time score calculation, and instant result feedback.</li>
+          <li>Used JavaScript and Local Storage for state handling and user data persistence.</li>
+          <li>Optimized UI for responsiveness across desktop and mobile devices.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>B.Tech in CSE</strong> – Sharda University (2024 – Present)<br>CGPA: 7.8 / 10</li>
+      <li><strong>Class XII (Science)</strong> – BSEB (2020 – 2024)<br>Percentage: 69%</li>
+      <li><strong>Class X</strong> – CBSE (2020)<br>Percentage: 70%</li>
+    </ul>
+  </section>
+
+  <!-- AWARDS -->
+  <section class="awards">
+    <h2>Awards & Certifications</h2>
+    <ul>
+      <li>HackerRank Java Basic Certification</li>
+      <li>LeetCode 50 Days Badge (2025) – 140+ DSA problems solved</li>
+      <li>AIU Cricket Participation Certificate – Sharda University</li>
+    </ul>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2026 Sunny Kumar | Frontend Developer</p>
+  </footer>
+
+</body>
+</html>
